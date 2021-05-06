@@ -9,6 +9,8 @@ Cada test tiene las pruebas unitarios necesarias, para ejecutarlas con solo hace
 composer test
 ```
 
+**UniqueArray** - Sin utilizar ninguna función ya existente de php, desarollar el método ```__invoke``` para obtener los valores únicos del arreglo.
+
 **CategoryTree** - dado un arreglo con categorias ```[id, parent(id), name]``` desarrollar el método build de la clase ```Printer``` el cual
 debe regresar un string que represente al árbol de categorias ordenados tanto padres e hijos de forma alfabética. Se deberá usar forzosamente
 las funciones ```usort``` y ```str_repeat```, además usar forzosamente para el ```usort``` un ```arrow function``` y ```spaceship operator```.
@@ -28,4 +30,3 @@ root
     poesía
 ```
 Para más detalle de como es la salida las pruebas unitarias tienen un ejemplo más extenso.
-
