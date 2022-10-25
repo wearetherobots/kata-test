@@ -1,0 +1,17 @@
+version: "2"
+services:
+  kata:
+    build:
+      args:
+        user: amir
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: kata
+    container_name: kata
+    restart: unless-stopped
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+   #MySQL Service
+  
